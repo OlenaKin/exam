@@ -1,1 +1,202 @@
-*{padding:0;margin:0}*,*::after,*::before{box-sizing:border-box}button{cursor:pointer}button,input,select,textarea{font-family:inherit}
+* {
+  padding: 0;
+  margin: 0;
+}
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh;
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+}
+body::before {
+  content: "";
+  position: fixed; /* Fixed position to cover the background image */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background: url("../assets/first-screen-image.svg") no-repeat center;
+  background-size: convey;
+  background-position: center -50px;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  max-width: 1440px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  margin-top: 15px;
+  margin-bottom: 16.25rem;
+  backdrop-filter: blur(20px);
+}
+header .header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 16.25rem;
+}
+header .header__container nav {
+  margin-left: auto;
+}
+header .header__container nav .header__nav-bar {
+  text-align: end;
+}
+header .header__container nav .header__nav-bar .header__nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: auto;
+}
+header .header__container nav .header__nav-bar .header__nav-list .header__nav-listItem {
+  margin-right: 1.8rem;
+}
+header .header__container nav .header__nav-bar .header__nav-list .header__nav-listItem a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 16.25rem;
+  position: relative;
+  z-index: 500;
+}
+main .main__initialBlock {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 52px;
+  margin-bottom: 9.4rem;
+}
+main .main__initialBlock h1 {
+  margin-bottom: 20px;
+}
+main .main__initialBlock .main__text-divider {
+  display: block;
+}
+main .main__initialBlock .main__textItalic {
+  font-style: italic;
+  color: rgb(118, 167, 240);
+}
+main .main__initialBlock p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+}
+main .main__initialBlock .main__join-button {
+  width: 182px;
+  height: 24px;
+  text-transform: uppercase;
+  color: #53F3CD;
+  font: "Lato", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
+  margin: 10px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+main .main__secondSection {
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  height: 678px;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 135px;
+}
+main .main__secondSection .main__section1-img {
+  z-index: -1;
+  width: 570px;
+  height: 670px;
+}
+main .main__secondSection .main__section1-text {
+  height: 36.25rem;
+  width: 48.2rem;
+  position: relative;
+  transform: translate(-170px, 45px);
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .main__secondSection .main__section1-text .main__section1-price {
+  width: 370px;
+  height: 490px;
+}
+main .main__secondSection .main__section1-text .main__section1-paragraph {
+  width: 370px;
+  height: 490px;
+  text-align: left;
+  color: white;
+  box-sizing: border-box;
+}
+main .main__secondSection .main__section1-text .main__section1-paragraph p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.918);
+  position: relative;
+  padding: 25px 10px;
+  margin-bottom: 10px;
+}
+main .main__secondSection .main__section1-text .main__section1-paragraph p span {
+  display: block;
+  margin-top: 10px;
+}
+main .main__secondSection .main__section1-text .main__section1-paragraph button {
+  width: 182px;
+  height: 24px;
+  text-transform: uppercase;
+  color: #53F3CD;
+  font: "Lato", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
+  margin: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
