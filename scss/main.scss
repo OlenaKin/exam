@@ -5,6 +5,9 @@ $font: "Lato", sans-serif;
 @import "./variables";
 @import "./mixins";
 @import "./common";
+@import "./mainContainer";
+@import "./footer";
+@import "./media";
 
 
 
@@ -17,7 +20,7 @@ $font: "Lato", sans-serif;
 }
 
 body {
-    height: 300vh; // Change to 100vh for proper layout
+    height: 400vh; // Change to 100vh for proper layout
     max-width: 1440px;
     width: 100%;
     position: relative;
@@ -28,10 +31,11 @@ body {
     color: $color;
     font-family: "Lato", sans-serif;
     
+    
 
     &::before {
         content: '';
-        //position: absolute;
+        position: absolute;
         position: fixed; /* Fixed position to cover the background image */
         top: 0;
         left: 50%;
@@ -39,8 +43,7 @@ body {
         width: 100%;
         height: 100%;
         background: url('../assets/first-screen-image.svg') no-repeat center;
-        background-size: convey;
-        background-position: center -50px;
+        background-size: cover;
         background-attachment: fixed;
         z-index: -1;        
     }
@@ -139,9 +142,15 @@ main {
         .main__join-button
         {
             @include button;
-             margin: 0;
-             font-family: "Lato", sans-serif;
-        }
+            margin: 0;
+            font-family: "Lato", sans-serif;
+             
+            }
+    
+            .main__join-button:hover::before {
+                width: 100%;
+            }
+        
     }
 
     .main__secondSection {
@@ -224,5 +233,51 @@ main {
 
         }
     }
+    .main__secondBlock .main__secondBlock__container{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1170px;
+        width: 100%;
+        height: 33.75rem;
 
+        .main__doublelayerBlock__img{
+            z-index: -1;
+            max-width: 600px;
+            width: 100%;
+        }
+    
+        .main__secondBlock__item{
+            max-width: 550px;
+            width: 100%;
+            height: 270px;
+            border: 2px solid #53F3CD;
+            padding: 20px 35px;
+            border-top: 1px solid #515773;  /* Top border */
+            border-bottom: none; /* Bottom border */
+            border-left: none;  /* No left border */
+            border-right: none; /* No right border */
+            margin-right: 30px;
+
+            h3{
+                font-family: "Playfair Display", serif;
+                font-weight: 400;
+                font-size: 34px;
+                margin-bottom: 20px;
+                span{
+                    font-style: italic;
+                    color: rgb(118, 167, 240);}
+            }
+
+            p{
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+
+        
+    }
 }
+

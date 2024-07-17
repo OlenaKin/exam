@@ -1,0 +1,45 @@
+@media (min-width: 600px) {
+    .header__nav-bar ul {
+        gap: 30px;
+    }
+
+    .contact-form,
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    label {
+        flex: 0 0 120px; /* Fixed width for labels */
+        margin-bottom: 0;
+    }
+
+    input, textarea {
+        flex: 1;
+    }
+
+    button {
+        height: 40px; /* Consistent height */
+    }
+}
+
+@media (min-width: 768px) {
+    .main__secondBlock__container,
+    .main__thirdBlock__container,
+    .main__finalBlock__textBox,
+    .main__doublelayerBlock__textBox {
+        justify-content: space-between;
+    }
+
+    .main__secondBlock__item,
+    .doublelayerBlock__text,
+    .main__finalBlock__textPiece {
+        flex: 1 1 45%;
+    }
+
+    .main__finalBlock__textPiece p,
+    .doublelayerBlock__text p {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
