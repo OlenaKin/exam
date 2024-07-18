@@ -3,12 +3,11 @@
 @use "sass:map";
 
 @function rem($sizeInPx) {
-    $remSize: math.div($sizeInPx, 16px);
-    @return #{$remSize}rem;
+  $remSize: math.div($sizeInPx, 16px);
+  @return #{$remSize}rem;
 }
 
-@mixin text(
-  $font-size: 16px,
+@mixin text($font-size: 16px,
   $font-weight: 400,
   $color: black,
   $line-height: initial,
@@ -18,13 +17,17 @@
 
   @if (string.index(#{$font-size}, "px")) {
     font-size: rem($font-size);
-  } @else {
+  }
+
+  @else {
     font-size: $font-size;
   }
 
   @if (string.index(#{$line-height}, "px")) {
     line-height: rem($line-height);
-  } @else {
+  }
+
+  @else {
     line-height: $line-height;
   }
 }
@@ -41,30 +44,38 @@ $breakpoints: (
     @media screen and (min-width: #{$screen}) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @media screen and (min-width: map.get($breakpoints, $screen)) {
       @content;
     }
   }
 }
 
-@mixin flexCenter {
+@mixin flexstart {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+
+@mixin button {
+  width: 182px;
+  height: 24px;
+  text-transform: uppercase;
+  color: #53F3CD;
+  font: $font-fam;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
+  margin: 10px;
+}
+
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-@mixin button{  
-width: 182px;
-height: 24px;
-text-transform: uppercase;
-color: #53F3CD;
-font: $font;
-font-size: 16px;
-letter-spacing: 1.5px;
-font-weight: 700;
-background-color: black;
-box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
-margin: 10px;
-}
-

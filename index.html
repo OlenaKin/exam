@@ -25,8 +25,16 @@
         <div class="header__logo">
           <a href="#"><img src="./assets/logo.svg" alt="logo picture" /></a>
         </div>
+
         <nav>
+          
           <div class="header__nav-bar">
+            <label class="burger header__burger" for="menu"
+            ><img src="./assets/burger.svg" alt="burger" /><input
+              class="burger__input header__burger-input"
+              type="checkbox"
+              id="check"
+          /></label>
             <ul class="header__nav-list">
               <li class="header__nav-listItem"><a href="#">Home</a></li>
               <li class="header__nav-listItem"><a href="#">About</a></li>
@@ -66,7 +74,7 @@
           </div>
           <!--2box-->
           <div class="main__section1-text">
-            <img src="assets/info-list.svg" alt="" />
+            <img src="assets/info-list.svg" alt="" class="image__price" />
             <!--box-->
             <div class="main__section1-paragraph">
               <p>
@@ -221,7 +229,7 @@
     </main>
 
     <footer>
-      <div class="footer__devision"></div>
+     
       <div class="footer-content">
         <div class="footer__contactText">
           <h6>Contact <span>our sales team</span></h6>
@@ -251,11 +259,13 @@
           </form>
         </div>
       </div>
-      <div class="footer__devision"></div>
+      
       <div class="footer__bottomPart">
         <div><p>© 2020 Solisgroup. All Rights Reserved.</p></div>
         <div><p>made by Zgraya.digital</p></div>
-        <div><p><span>User Agreement</span> Privacy Policy</p></div>
+        <div>
+          <p><span>User Agreement</span> Privacy Policy</p>
+        </div>
       </div>
     </footer>
   </body>
