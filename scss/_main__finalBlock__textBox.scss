@@ -1,0 +1,152 @@
+.main__finalBlock{
+    max-width: 1170px;
+    width: 100%;
+    height: 510px;
+    margin-bottom: 100px;
+    
+
+    h6{
+        font-family: $font-fam-Secondary;
+        font-weight: 400;
+        
+        margin-bottom: 20px;
+    }
+
+    span{
+        
+        
+        color: rgb(118, 167, 240);
+        font-style: italic;
+    }
+
+    p{
+        font-family:  "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 50px;
+        letter-spacing: 0.3px;
+        line-height: 26px;
+
+        .finalBlock__paragraphSpan{
+                display: block;
+                font-style: normal;
+                color: white;
+            }
+        
+       }
+
+    .main__finalBlock__textBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 10px;
+
+       
+
+
+
+        .main__finalBlock__textPiece{
+            max-width: 370px;
+            width: 100%;
+            height: 340px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 30px 40px 26px 40px;
+            line-height: 26px;
+            letter-spacing: 0.3px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Lato", sans-serif;
+            
+           
+            
+            
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: white;
+                background-color: rgba(25, 28, 41, 0.4); 
+                z-index: 1; /* Place overlay above the image */
+                opacity: 80%;
+            } 
+
+            h6{
+                font-family: $font-fam-Secondary;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 0.5px;
+                z-index: 2;
+                position: relative;
+            }
+            
+            p{ z-index: 3;
+                position: relative;
+                margin-bottom: 10px;
+
+            }
+                 
+        }
+
+        .item1{
+            background-image: url(../assets/image1.png);
+            
+            
+            
+               
+            
+            
+        }
+
+        .item2{
+            background-image: url('../assets/image2.png');
+            
+                
+        }
+
+        .item3{
+            background-image: url(../assets/image3.png);
+             
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+  h6{ 
+    font-size: 40px;}
+
+    p{font-size: 18px;}
+
+}
+
+@media (max-width: 576px) {
+  .main__finalBlock{
+    overflow: scroll;
+    text-align: center;
+    margin-bottom: 30px;
+
+    .main__finalBlock__textPiece
+    {
+        border: 3px solid whitesmoke;
+        
+        
+    }
+
+    h6{ 
+        font-size: 26px;}
+
+        p{
+            font-size: 14px;
+        }
+    
+}
+}

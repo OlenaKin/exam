@@ -1,7 +1,30 @@
-.burger{
-    cursor: pointer;
-
-    input{
-       position: absolute; 
-    }
+.header__label-burger{
+    z-index: 1;
 }
+
+.header__burger-line{
+ border: 1px solid white;
+ width: 17px;
+ margin-bottom: 4px;
+
+}
+
+.header__burger-input{
+    display: none;
+}
+
+#check:checked ~ .header__nav-list {
+    transform: translateY(0);
+}
+
+    @media (min-width: 576px){
+        .header__burger-line{
+            display: none;
+        } 
+
+        
+    }
+
+
+
+    

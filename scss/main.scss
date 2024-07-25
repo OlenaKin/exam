@@ -7,10 +7,17 @@ $font-fam-Secondary: "Playfair Display", serif;
 @import "./mixins";
 @import "./common";
 @import "./header";
+@import "./header__nav";
 @import "./mainContainer";
+@import "./main__initialBlock";
+@import "./main__secondSection";
 @import "./footer";
-@import "./media";
 @import "./burger";
+@import "./main__thirdSection";
+@import "./main__quoteBlock";
+@import "./screenBlock";
+@import "./main__doublelayerBlock";
+@import "./main__finalBlock__textBox";
 
 
 
@@ -50,5 +57,23 @@ body {
 }
 
 
+@media (max-width: 576px){
+    
+    
+    .main__secondBlock{
+        h3{
+            font-size: 14px;
+            color: red;
+        }
+    
+        
+    }
+
+    
 
 
+
+
+
+
+}

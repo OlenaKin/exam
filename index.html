@@ -22,19 +22,9 @@
   <body>
     <header>
       <div class="header__container">
-        <div class="header__logo">
-          <a href="#"><img src="./assets/logo.svg" alt="logo picture" /></a>
-        </div>
-
+        <a href="#"><img src="./assets/logo.svg" alt="logo picture" class="header__logo"/></a>        
         <nav>
-          
-          <div class="header__nav-bar">
-            <label class="burger header__burger" for="menu"
-            ><img src="./assets/burger.svg" alt="burger" /><input
-              class="burger__input header__burger-input"
-              type="checkbox"
-              id="check"
-          /></label>
+          <input type="checkbox" id="check" class="header__burger-input" />                      
             <ul class="header__nav-list">
               <li class="header__nav-listItem"><a href="#">Home</a></li>
               <li class="header__nav-listItem"><a href="#">About</a></li>
@@ -42,9 +32,13 @@
               <li class="header__nav-listItem"><a href="#">Use Cases</a></li>
               <li class="header__nav-listItem"><a href="#">Pricing</a></li>
               <li class="header__nav-listItem"><a href="#">Resources</a></li>
-            </ul>
-          </div>
-        </nav>
+            </ul>          
+        </nav>        
+        <label for="check" class="header__label-burger">
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+        </label>
       </div>
     </header>
 
@@ -58,7 +52,7 @@
           >
           economy
         </h1>
-        <p class="">
+        <p class="initial-paragraph">
           We are bringing real solutions to the payments world by
           <span class="main__text-divider">leveraging public blockchains.</span>
         </p>
@@ -69,14 +63,24 @@
       <section>
         <!--1box-->
         <div class="main__secondSection">
-          <div class="main__section1-img">
+          <!--<div class="second-section__img">
             <img src="./assets/section1-img.png" alt="" />
-          </div>
+          </div>-->
           <!--2box-->
-          <div class="main__section1-text">
-            <img src="assets/info-list.svg" alt="" class="image__price" />
+          <div class="secondSection__text">
+            <div class="secondSection__price">
+            <h2>$1 tril</h2>
+            <p>Market cap potential</p> 
+            <div class="secondSection__division"></div>  
+            <h2>$3.65 mil</h2>
+            <p>Deposited to platform</p>
+            <div class="secondSection__division"></div>
+            <h2>12</h2>
+            <p> Stablecoins</p>         
+          </div>
+           
             <!--box-->
-            <div class="main__section1-paragraph">
+            <div class="secondSection__paragraph">
               <p>
                 Solis group is a new venture created with investments from and
                 collaboration with XBTO International, XBTO Ventures and Phil
@@ -95,9 +99,9 @@
           </div>
         </div>
       </section>
-      <section class="main__secondBlock">
-        <div class="main__secondBlock__container">
-          <div class="main__secondBlock__item">
+      <section class="main__thirdSection">
+        <div class="main__thirdSection__container">
+          <div class="main__thirdSection__item">
             <h3>
               Qualified <span>traders</span> and <span>liquidty</span> solutions
             </h3>
@@ -106,13 +110,13 @@
               USDT, TrueUSD, Dai, Eurs and Gemini Dollar.
             </p>
           </div>
-          <div class="main__secondBlock__item">
+          <div class="main__thirdSection__item">
             <h3>Settlement/OTC API and <span>integration</span></h3>
             <p>
               Integrate OTC operations and settlements using our efficient API.
             </p>
           </div>
-          <div class="main__secondBlock__item">
+          <div class="main__thirdSection__item">
             <h3>The best <span>payments solutions</span></h3>
             <p>
               For all stablecoin payments, from point-of-sale transactions to
@@ -120,7 +124,7 @@
               Stablehouse is for you.
             </p>
           </div>
-          <div class="main__secondBlock__item">
+          <div class="main__thirdSection__item">
             <h3>
               <span>Treasury</span> and <span>returns </span>for stablecoin
               stores
@@ -132,7 +136,7 @@
           </div>
         </div>
       </section>
-      <section class="main__thirdBlock">
+      <section class="main__quoteBlock">
         <div class="main__thirdBlock__container">
           <h4>
             Solis Group serves as a liquidity nexus that gives stablecoin
@@ -143,7 +147,8 @@
       </section>
       <section>
         <div class="main__screenBlock">
-          <img src="./assets/screensaver-for -video.svg" alt="screen" />
+          <!--<img src="./assets/screensaver-for -video.svg" alt="screen" />-->
+          <div class="main__video-container"><iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           <h5>A <span>powerful API </span>, easy to use user interface</h5>
           <p>
             Our API allows all members to interact with Stablehouse’s platform,
@@ -153,15 +158,9 @@
         </div>
       </section>
       <section>
-        <div class="main__doublelayerBlock">
-          <div class="main__doublelayerBlock__img">
-            <img
-              src="./assets/features-background-image2.svg"
-              alt="background image"
-            />
-          </div>
+        <div class="main__doublelayerBlock">          
           <div class="main__doublelayerBlock__textBox">
-            <div class="doublelayerBlock__text">
+            <div class="doublelayerBlock__text">            
               <h5>On-Exchange Trading</h5>
               <p><span>Instant</span>Passive Inventory earns fees</p>
             </div>
@@ -178,6 +177,7 @@
             </div>
           </div>
         </div>
+        
       </section>
       <section>
         <div class="main__finalBlock">
@@ -229,7 +229,6 @@
     </main>
 
     <footer>
-     
       <div class="footer-content">
         <div class="footer__contactText">
           <h6>Contact <span>our sales team</span></h6>
@@ -259,7 +258,7 @@
           </form>
         </div>
       </div>
-      
+
       <div class="footer__bottomPart">
         <div><p>© 2020 Solisgroup. All Rights Reserved.</p></div>
         <div><p>made by Zgraya.digital</p></div>
