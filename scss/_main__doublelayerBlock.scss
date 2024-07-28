@@ -59,11 +59,13 @@
             }
         }
         button {
-            @include button;  
-            height: 50px;
-            width: 220px;
-            margin: 0;
-            margin-top: 20px;
+            //@include button;  
+            //height: 50px;
+            //width: 220px;
+            //margin: 0;
+            //margin-top: 20px;
+            background-color: black;
+            
             
         }
     

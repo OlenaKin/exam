@@ -19,7 +19,7 @@ textarea {
 
 header {
   position: fixed;
-  top: 0;
+  top: 30px;
   width: 100%;
   height: 80px;
   z-index: 1000;
@@ -64,12 +64,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 2rem;
+  gap: 2.3rem;
 }
 .header__nav-list .header__nav-listItem {
   list-style: none;
   font-size: 14px;
-  text-transform: uppercase;
   cursor: pointer;
 }
 .header__nav-list .header__nav-listItem a {
@@ -132,7 +131,7 @@ main {
 }
 .main__initialBlock h1 {
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 5px 5px 5px 0;
 }
 .main__initialBlock .main__text-divider {
   display: block;
@@ -146,27 +145,19 @@ main {
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
+  margin-bottom: 50px;
+  padding: 5px 5px 5px 0;
 }
 .main__initialBlock .main__join-button {
-  width: 182px;
-  height: 24px;
-  text-transform: uppercase;
-  color: #53F3CD;
-  font: "Lato", sans-serif;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  background-color: black;
-  box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
-  margin: 10px;
-  margin: 0;
+  padding: 5px;
   font-family: "Lato", sans-serif;
   margin: 0 auto;
+  background-color: #161926;
 }
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
 }
 @media (max-width: 576px) {
@@ -203,10 +194,9 @@ main {
   height: 580px;
   height: 100%;
   display: flex;
-  align-items: center;
   margin-left: auto;
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 45px;
+  padding: 45px 5px;
   gap: 2rem;
   box-sizing: border-box;
 }
@@ -219,50 +209,42 @@ main {
   line-height: 72px;
 }
 .main__secondSection .secondSection__text p {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
 }
-.main__secondSection .secondSection__price {
-  flex: 1.2;
+.main__secondSection .secondSection__text .secondSection__price {
+  flex: 1.4;
+  text-align: center;
 }
-.main__secondSection .secondSection__paragraph {
-  flex: 1.8;
-  line-height: 26px;
+.main__secondSection .secondSection__text .secondSection__paragraph {
+  padding: 20px;
+  flex: 1.6;
 }
-.main__secondSection .secondSection__paragraph p {
+.main__secondSection .secondSection__text .secondSection__paragraph p {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.918);
   position: relative;
-  padding: 25px 10px;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
+  line-height: 26px;
 }
-.main__secondSection .secondSection__paragraph span {
+.main__secondSection .secondSection__text .secondSection__paragraph span {
   display: block;
   margin-top: 10px;
   font-size: 18px;
 }
-.main__secondSection .secondSection__paragraph .main__section1-button {
-  width: 182px;
-  height: 24px;
-  text-transform: uppercase;
-  color: #53F3CD;
-  font: "Lato", sans-serif;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  background-color: black;
-  box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
-  margin: 10px;
+.main__secondSection .secondSection__text .secondSection__paragraph .main__section1-button {
+  background-color: #161926;
 }
 
 .secondSection__division {
   width: 100px;
   border: 1px solid #85BBB1;
   margin-bottom: 12px;
+  margin: 0 auto;
 }
 
 @media (max-width: 576px) {
@@ -281,27 +263,28 @@ main {
     box-sizing: border-box;
     gap: 5px;
   }
-  .main__secondSection .secondSection__text .secondSection__price {
-    padding: 1px;
-  }
   .main__secondSection .secondSection__text .secondSection__price h2 {
     font-size: 20px;
-    margin-bottom: 5px;
-    padding: 2px;
+    margin-bottom: 3px;
+    padding: 5px;
   }
   .main__secondSection .secondSection__text .secondSection__price p {
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
   .main__secondSection .secondSection__text .secondSection__paragraph {
+    text-align: left;
     flex: 2;
-    padding: 3px;
+    padding: 30px 3px 3px 3px;
   }
   .main__secondSection .secondSection__text .secondSection__paragraph p,
   .main__secondSection .secondSection__text .secondSection__paragraph span {
     font-size: 12px;
     line-height: normal;
     font-family: "Lato", sans-serif;
+  }
+  .main__secondSection .secondSection__text .secondSection__paragraph p {
+    margin-bottom: 50px;
   }
   .main__secondSection .secondSection__text .main__section1-button {
     width: 105px;
@@ -358,7 +341,7 @@ footer .footer-content .footer__form .contact-form {
   max-width: 750px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #0d1322;
+  background-color: #0d1225;
   border-radius: 5px;
 }
 footer .footer-content .footer__form .form-group {
@@ -378,32 +361,18 @@ footer .footer-content .footer__form label {
 footer .footer-content .footer__form input, footer .footer-content .footer__form textarea {
   width: 100%;
   padding: 10px;
-  background-color: #161926; /* Input background */
+  background-color: #0d1225; /* Input background */
   color: #BBBCC1;
   border: none; /* No border */
   border-bottom: 1px solid #BBBCC1;
-  border-radius: 4px;
   margin-bottom: 10px;
 }
 footer .footer-content .footer__form input::placeholder, footer .footer-content .footer__form textarea::placeholder {
-  color: #070707; /* Placeholder color */
+  color: #161926; /* Placeholder color */
 }
 footer .footer-content .footer__form button {
-  width: 182px;
-  height: 24px;
-  text-transform: uppercase;
-  color: #53F3CD;
-  font: "Lato", sans-serif;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  background-color: black;
-  box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
-  margin: 10px;
-  margin: 0;
-  margin-top: 10px;
-  padding: 16px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  background-color: #161926;
 }
 footer .footer__bottomPart {
   display: flex;
@@ -452,12 +421,6 @@ footer .footer__bottomPart span {
   z-index: 1;
 }
 
-.header__burger-line {
-  border: 1px solid white;
-  width: 17px;
-  margin-bottom: 4px;
-}
-
 .header__burger-input {
   display: none;
 }
@@ -467,7 +430,7 @@ footer .footer__bottomPart span {
 }
 
 @media (min-width: 576px) {
-  .header__burger-line {
+  .header__label-burger {
     display: none;
   }
 }
@@ -480,24 +443,24 @@ footer .footer__bottomPart span {
   max-width: 1170px;
   width: 100%;
   height: auto;
+  margin: 0;
   margin-bottom: 40px;
 }
 .main__thirdSection__container .main__thirdSection__item {
   max-width: 540px;
   width: 100%;
-  height: 100%;
-  padding: 20px 35px;
+  height: 250px;
+  padding: 35px 35px;
   border-top: 1px solid #515773;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
   margin-right: 30px;
+  margin-bottom: 20px;
   box-sizing: border-box;
 }
 .main__thirdSection__container .main__thirdSection__item h3 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   margin-bottom: 20px;
+  color: rgb(255, 255, 255);
 }
 .main__thirdSection__container .main__thirdSection__item h3 span {
   font-style: italic;
@@ -511,7 +474,7 @@ footer .footer__bottomPart span {
   .main__thirdSection__item h3 {
     font-family: "Playfair Display", serif;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
   .main__thirdSection__item h3 span {
@@ -526,6 +489,9 @@ footer .footer__bottomPart span {
 @media (max-width: 576px) {
   .main__thirdSection__item {
     text-align: center;
+    margin-bottom: 0;
+    height: auto;
+    padding: 0;
   }
   .main__thirdSection__item h3 {
     font-size: 26px;
@@ -540,7 +506,7 @@ footer .footer__bottomPart span {
   height: auto;
   background-image: url(../assets/quote-background.svg);
   background-size: cover;
-  padding: 4.37rem 16.8rem 6rem 5.5px;
+  padding: 4.37rem 16.8rem 6rem 6.25rem;
   margin-bottom: 120px;
 }
 .main__quoteBlock h4 {
@@ -618,7 +584,7 @@ footer .footer__bottomPart span {
 .main__screenBlock .main__video-container iframe {
   top: 0;
   left: 0;
-  width: 90%;
+  width: 88%;
   height: 90%;
   border: 0;
 }
@@ -717,21 +683,7 @@ footer .footer__bottomPart span {
   padding: 0;
 }
 .main__doublelayerBlock .main__doublelayerBlock__textBox button {
-  width: 182px;
-  height: 24px;
-  text-transform: uppercase;
-  color: #53F3CD;
-  font: "Lato", sans-serif;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  font-weight: 700;
   background-color: black;
-  box-shadow: 0 4px 8px rgba(83, 243, 205, 0.5);
-  margin: 10px;
-  height: 50px;
-  width: 220px;
-  margin: 0;
-  margin-top: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -865,6 +817,9 @@ footer .footer__bottomPart span {
     text-align: center;
     margin-bottom: 30px;
   }
+  .main__finalBlock .main__finalBlock__textBox {
+    margin: 0 auto;
+  }
   .main__finalBlock .main__finalBlock__textPiece {
     border: 3px solid whitesmoke;
   }
@@ -887,6 +842,7 @@ body {
   position: relative;
   color: #FFFFFF;
   font-family: "Lato", sans-serif;
+  background-color: #161926;
 }
 body::before {
   content: "";

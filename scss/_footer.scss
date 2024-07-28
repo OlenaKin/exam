@@ -66,7 +66,7 @@ footer {
                 max-width: 750px;
                 margin: 0 auto;
                 padding: 20px;
-                background-color: #0d1322;
+                background-color: #0d1225;
                 border-radius: 5px;
             }
     
@@ -89,24 +89,25 @@ footer {
             input, textarea {
                 width: 100%;
                 padding: 10px;
-                background-color: #161926; /* Input background */
+                background-color: #0d1225; /* Input background */
                 color: #BBBCC1;
                 border: none; /* No border */
                 border-bottom: 1px solid #BBBCC1;
-                border-radius: 4px;
+                
                 margin-bottom: 10px;
             }
     
             input::placeholder, textarea::placeholder {
-                color: #070707; /* Placeholder color */
+                color: #161926; /* Placeholder color */
             }
     
             button {
-                @include button; 
-                margin: 0;
-                margin-top: 10px; 
-                padding: 16px;
-                padding-bottom: 30px;
+                //@include button; 
+                //margin: 0;
+                margin-top: 30px; 
+                //padding: 16px;
+                //padding-bottom: 30px;
+                background-color:#161926;
                 
             }
     
