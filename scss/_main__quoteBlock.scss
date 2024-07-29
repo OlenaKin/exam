@@ -1,7 +1,8 @@
 .main__quoteBlock{
     max-width: 1170px;
     width: 100%;
-    height: auto;
+    max-height: 400px;
+    height: 100%;
     background-image: url(../assets/quote-background.svg);
     background-size: cover;
     padding: 4.37rem 16.8rem 6rem 6.25rem;
@@ -13,7 +14,7 @@ h4 {
     font-weight: 400;
     letter-spacing: 2px;
     padding-left: 70px;
-    padding-top: 50px;
+    padding-top: 10px;
     line-height: 46px;
     position: relative; 
     margin-bottom: 40px;
