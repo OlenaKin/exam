@@ -179,7 +179,7 @@ main {
 .main__secondSection {
   max-width: 1170px;
   width: 100%;
-  height: 670px;
+  max-height: 670px;
   height: 100%;
   background-image: url(../statistic-image.png);
   background-size: contain;
@@ -192,12 +192,13 @@ main {
 .main__secondSection .secondSection__text {
   max-width: 770px;
   width: 100%;
-  height: 580px;
+  max-height: 580px;
   height: 100%;
   display: flex;
   margin-left: auto;
   background-color: rgb(22, 25, 38);
-  padding: 45px 5px;
+  opacity: 90%;
+  padding: 45px 5px 45px;
   gap: 2rem;
   box-sizing: border-box;
 }
@@ -455,7 +456,8 @@ footer .footer__bottomPart .footer__bottom-last-text {
 .main__thirdSection__container .main__thirdSection__item {
   max-width: 540px;
   width: 100%;
-  height: 250px;
+  max-height: 250px;
+  height: 100%;
   border-top: 1px solid #515773;
   margin-right: 30px;
   box-sizing: border-box;
@@ -495,10 +497,10 @@ footer .footer__bottomPart .footer__bottom-last-text {
 }
 @media (max-width: 576px) {
   .main__thirdSection__item {
-    text-align: center;
     margin-bottom: 0;
     padding-top: 40px;
     height: auto;
+    padding-bottom: 13px;
   }
   .main__thirdSection__item h3 {
     font-size: 26px;
@@ -650,85 +652,102 @@ footer .footer__bottomPart .footer__bottom-last-text {
 .main__doublelayerBlock {
   max-width: 1170px;
   width: 100%;
-  height: 540px;
+  max-height: 540px;
+  height: 100%;
   background-image: url("../features-background-image.png");
   background-size: contain;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  overflow: hidden;
-  margin-bottom: 120px;
 }
 .main__doublelayerBlock .main__doublelayerBlock__textBox {
   display: flex;
-  margin-left: auto;
   background-color: rgb(22, 25, 38);
+  opacity: 90%;
   max-width: 770px;
   width: 100%;
-  height: 450px;
-  margin-top: 45px;
+  max-height: 450px;
+  height: 100%;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text {
-  max-width: 19rem;
+  text-align: left;
+  max-width: 19.1rem;
   width: 100%;
-  height: 7.7rem;
+  max-height: 7.9rem;
+  height: 100%;
   box-sizing: border-box;
-  gap: 18px;
-  padding: 7px 7px 0 0;
+  padding: 10px 0 10px;
 }
 .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text h5 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 1px;
-  font-size: 24px;
 }
 .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text p {
   font-weight: 300;
-  font-size: 18px;
-  line-height: 26px;
   letter-spacing: 0.3px;
 }
 .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text span {
   display: block;
   padding: 0;
 }
-.main__doublelayerBlock .main__doublelayerBlock__textBox button {
-  background-color: black;
-}
 
 @media (min-width: 1200px) {
-  .main__doublelayerBlock__textBox {
+  .main__doublelayerBlock {
+    margin-bottom: 120px;
+    padding: 45px 0 45px;
+  }
+  .main__doublelayerBlock .main__doublelayerBlock__textBox {
     padding: 75px 70px;
+    gap: 10px;
+    margin-left: auto;
   }
-  .main__doublelayerBlock__textBox h5 {
+  .main__doublelayerBlock .main__doublelayerBlock__textBox h5 {
     font-size: 24px;
-    margin-bottom: 18px;
+    line-height: 48px;
   }
-  .main__doublelayerBlock__textBox p {
+  .main__doublelayerBlock .main__doublelayerBlock__textBox p {
     font-size: 18px;
+    line-height: 26px;
+  }
+  .main__doublelayerBlock .main__doublelayerBlock__textBox .bigButton {
+    padding-top: 50px;
+    width: 300px;
+    height: 90px;
+    padding: 0;
   }
 }
 @media (max-width: 576px) {
   .main__doublelayerBlock {
     background-image: none;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .main__doublelayerBlock .main__doublelayerBlock__textBox {
     text-align: center;
-    height: auto;
-    padding: 10px;
   }
-  .main__doublelayerBlock .main__doublelayerBlock__textBox h5 {
+  .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text {
+    text-align: left;
+    padding: 20px 7px 20px;
+    margin: 6px 0 6px;
+  }
+  .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text h5 {
     font-size: 20px;
+    line-height: normal;
+    margin-bottom: 15px;
   }
-  .main__doublelayerBlock .main__doublelayerBlock__textBox p {
+  .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text p {
     font-size: 14px;
+    line-height: normal;
   }
-  .main__doublelayerBlock .main__doublelayerBlock__textBox .button {
-    padding: 10px;
+  .main__doublelayerBlock .main__doublelayerBlock__textBox .doublelayerBlock__text .bigButton {
+    width: 180px;
+    height: 60px;
+    background-color: black;
+    margin: 0 auto;
   }
 }
 .main__finalBlock {
@@ -752,7 +771,6 @@ footer .footer__bottomPart .footer__bottom-last-text {
   font-size: 18px;
   margin-bottom: 50px;
   letter-spacing: 0.3px;
-  line-height: 26px;
 }
 .main__finalBlock p .finalBlock__paragraphSpan {
   display: block;
@@ -817,6 +835,10 @@ footer .footer__bottomPart .footer__bottom-last-text {
 }
 
 @media (min-width: 1200px) {
+  .main__finalBlock__textPiece {
+    border: 3px solid whitesmoke;
+    line-height: 26px;
+  }
   h6 {
     font-size: 40px;
   }
@@ -827,7 +849,7 @@ footer .footer__bottomPart .footer__bottom-last-text {
 @media (max-width: 576px) {
   .main__finalBlock {
     overflow: scroll;
-    text-align: center;
+    padding: 7px;
     margin-bottom: 30px;
   }
   .main__finalBlock .main__finalBlock__textBox {
@@ -835,12 +857,15 @@ footer .footer__bottomPart .footer__bottom-last-text {
   }
   .main__finalBlock .main__finalBlock__textPiece {
     border: 3px solid whitesmoke;
+    line-height: normal;
   }
   .main__finalBlock h6 {
     font-size: 26px;
+    line-height: normal;
   }
   .main__finalBlock p {
     font-size: 14px;
+    line-height: normal;
   }
 }
 * {
@@ -876,7 +901,6 @@ body::before {
 @media (max-width: 576px) {
   .main__secondBlock h3 {
     font-size: 14px;
-    color: red;
   }
 }
 

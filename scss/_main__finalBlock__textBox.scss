@@ -25,7 +25,7 @@
         font-size: 18px;
         margin-bottom: 50px;
         letter-spacing: 0.3px;
-        line-height: 26px;
+        
 
         .finalBlock__paragraphSpan{
                 display: block;
@@ -121,7 +121,13 @@
 
 
 @media (min-width: 1200px) {
-  h6{ 
+    .main__finalBlock__textPiece
+    {
+        border: 3px solid whitesmoke;
+        line-height: 26px;        
+    }
+  
+    h6{ 
     font-size: 40px;}
 
     p{font-size: 18px;}
@@ -131,7 +137,7 @@
 @media (max-width: 576px) {
   .main__finalBlock{
     overflow: scroll;
-    text-align: center;
+    padding: 7px;
     margin-bottom: 30px;
 
     .main__finalBlock__textBox{
@@ -141,15 +147,17 @@
     .main__finalBlock__textPiece
     {
         border: 3px solid whitesmoke;
-        
-        
+        line-height: normal;        
     }
 
     h6{ 
-        font-size: 26px;}
+        font-size: 26px;
+        line-height: normal;
+    }
 
         p{
             font-size: 14px;
+            line-height: normal;
         }
     
 }
