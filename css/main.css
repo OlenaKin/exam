@@ -150,7 +150,6 @@ main {
   padding: 5px 5px 5px 0;
 }
 .main__initialBlock .main__join-button {
-  padding: 5px;
   font-family: "Lato", sans-serif;
   margin: 0 auto;
   background-color: #161926;
@@ -695,6 +694,9 @@ footer .footer__bottomPart .footer__bottom-last-text {
   display: block;
   padding: 0;
 }
+.main__doublelayerBlock .main__doublelayerBlock__textBox .bigButton {
+  cursor: pointer;
+}
 
 @media (min-width: 1200px) {
   .main__doublelayerBlock {
@@ -719,6 +721,7 @@ footer .footer__bottomPart .footer__bottom-last-text {
     width: 300px;
     height: 90px;
     padding: 0;
+    cursor: pointer;
   }
 }
 @media (max-width: 576px) {
@@ -748,6 +751,7 @@ footer .footer__bottomPart .footer__bottom-last-text {
     height: 60px;
     background-color: black;
     margin: 0 auto;
+    cursor: pointer;
   }
 }
 .main__finalBlock {

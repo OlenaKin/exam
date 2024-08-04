@@ -63,18 +63,20 @@
 
             }
         }
-        //button {
+        .bigButton {
             //@include button;  
             //height: 50px;
             //width: 220px;
             //margin: 0;
             //margin-top: 20px;
             //background-color: black;
+            cursor: pointer;
             
             
         }
     
     }
+}
 
 
 
@@ -111,7 +113,7 @@
         width: 300px;
         height: 90px;
         padding: 0;
-        
+        cursor: pointer;
       }
 }
 }
@@ -150,7 +152,7 @@
             height: 60px;
             background-color: black;
             margin: 0 auto;
-           
+            cursor: pointer;
           }
     }
     
